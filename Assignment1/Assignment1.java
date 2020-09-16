@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.Scanner;
 public class Assignment1 {
 	
 	
@@ -6,17 +7,11 @@ public class Assignment1 {
 		String[] list = new String[666];
 		Stack myStack = new Stack();
 		Queue myQueue = new Queue();
-		File file = new File("C:\\Users\\sprag\\OneDrive\\Documents\\downloads\\magicitems.txt"); 
-		  
-		  BufferedReader br = new BufferedReader(new FileReader(file)); 
-		  
-		  String st; 
-		  while ((st = br.readLine()) != null) {
-		    int k=0;
-		    list[k] = st;
-		    k++;
-		    System.out.println(st);
-		  }
+		Scanner input = new Scanner(new File("magicitems.txt"));
+		for(int m = 0;m<666;m++) {
+			list[m] = input.nextLine();
+			System.out.println(list[m]);
+		}
 		  
 		  
 		  int compare = 0;
