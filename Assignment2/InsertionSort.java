@@ -20,7 +20,7 @@ public class InsertionSort {
 		for(int i=0; i<list.size(); i++) {
 			int j=i;
 			while(j > 0 && list.get(j).compareToIgnoreCase(list.get(j-1)) < 0) {
-				//In the while loop you are checking to see if the value is greater than the one prevous to it
+				//In the while loop you are checking to see if the value is greater than the one previous to it
 				//So we are checking to see if "j" is greater than "j-1"
 				String temp = list.get(j);
 				list.set(j, list.get(j-1));
