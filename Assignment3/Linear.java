@@ -138,6 +138,7 @@ public class Linear {
 		//*/
 		
 		System.out.println("Number of comparisons: " + comparisons);
+		System.out.println("Average number of comparisons: " + comparisons/42);
 
 	}
 
