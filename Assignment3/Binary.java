@@ -42,14 +42,15 @@ public class Binary {
 	
 	public static ArrayList<String> binarySearch(ArrayList<String> list, ArrayList<String> temp){
 		int index = 0;
-		
-		while(index < temp.size()) {
+		//Index goes through the temp list
+		while(index < temp.size()) { //All temp values have been found when this is false
 			int left = 0;
 			int right = list.size() - 1;
 			while(left <= right) {
 				int mid = left + (right - left) /2;
 				
-				if(smallerList.size() == 42) {
+				if(smallerList.size() == 42) { 
+					//smallerList is full if this is true
 					return smallerList;
 				}
 				
@@ -62,14 +63,16 @@ public class Binary {
 				}
 				
 				else if(list.get(mid).compareToIgnoreCase(temp.get(index)) < 0) {
+					//Need to use the right half
 					left = mid + 1;
 				}
 				
 				else if(list.get(mid).compareToIgnoreCase(temp.get(index)) > 0) {
+					//Need to use the left half
 					right = mid - 1;
 				}
 			}
-			
+			//Go to next string in temp
 			index++;
 		}
 		
