@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{CMPT435 Assignment3}
+\author{Brian Sprague }
+\date{October 28, 2020}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This is my LaTeX submission for Assignment 3. In this document you will find the results for my comparison numbers as well as the asymptotic run time of hashing with chaining and an explanation for the result.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.25]{java.jpg}
+\caption{Java}
+\label{fig:java}
+\end{figure}
+
+\section{Results - Linear}
+For my linear search class, using a list of size 666, there were 13,398 total comparisons done in order to find the 42 random strings. On average, this comes out to about 319 comparisons. The average load for the hash table linked lists came out to 2.66, and the standard deviation was 42.04.
+
+\section{Results - Binary}
+For my binary search class, using a list of size 666, there were 361 total comparisons done in order to find the 42 random strings. On average, this comes out to about 8 comparisons, which is right where we expect it to be. The average load for the hash table linked lists came out to 2.66, and the standard deviation was 42.04.
+
+
+\section{Asymptotic Run Time}
+If separate chaining is used to resolve collisions, the asymptotic run time of the hash table to insert n keys is O(1+alpha). Here, alpha represents the average length of the chains. This is the asymptotic run time because in order to search for a desired string in the hash table, you need to go through the chains to find the correct one, because your desired string is not always the first one in the chain.
+
+\end{document}
