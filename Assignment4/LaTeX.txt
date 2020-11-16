@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{CMPT435 Assignment4}
+\author{Brian Sprague }
+\date{November 2020}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This is my LaTeX document for Assignment 4. In this document you will find an explanation of the asymptotic run times of depth-first and breadth-first traversals, as well as an explanation of the asymptotic run time of a binary search tree.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.25]{java.jpg}
+\caption{Java}
+\label{fig:java}
+\end{figure}
+
+\section{Asymptotic Run Time: Depth-First and Breadth-First Searches}
+The asymptotic run time of both depth-first and breadth-first searches is O(n). This is because the complexity of both searches is O(V+E), where V is the number of vertices and E is the number of edges. This comes out to a number n, which makes the asymptotic run time O(n).
+
+\section{Asymptotic Run Time: Binary Search Tree}
+The asymptotic run time of a binary search tree is also O(n). This is because the time complexity of a binary search tree is O(h) where h is the height of a tree. This once again comes out to a number n, making the worst case run time O(n).
+
+\end{document}
