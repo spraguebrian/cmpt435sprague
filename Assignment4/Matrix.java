@@ -97,6 +97,7 @@ public class Matrix {
     } 
 
     public void printGraph() {
+    	//Printing the Matrix
         System.out.println("Graph: (Matrix)");
         for (int i = 0; i < vertex; i++) {
             for (int j = 0; j <vertex ; j++) {
@@ -104,6 +105,8 @@ public class Matrix {
             }
             System.out.println();
         }
+        
+        //Printing the Adjacency List
         System.out.println("Graph: (Adjacency List)");
         for (int i = 0; i < vertex; i++) {
             System.out.print("Vertex " + i + " is connected to:");
