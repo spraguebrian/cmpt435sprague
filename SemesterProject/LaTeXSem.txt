@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{CMPT435 Semester Project}
+\author{Brian Sprague}
+\date{December 8th, 2020}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This is my LaTeX document for my semester project. In this document I will showcase my results for testing my code against multiple different population sizes.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.25]{java.jpg}
+\caption{Java}
+\label{fig:java}
+\end{figure}
+
+\section{Results}
+My code is set up to allow for the user to input a population size of their desire, and this allows the program to be run against many different testing sizes. Here, I will show the results that are outputted for each population size.
+\begin{center}
+ \begin{tabular}{|c | c | c | c| c|} 
+ \hline
+  & 1,000 & 10,000 & 100,000 & 1,000,000 \\ [0.5ex] 
+ \hline
+ Case 1 & 106 & 1,057 & 10,628 & 106,295 \\ 
+ \hline
+ Case 2 & 18 & 186 & 1,746 & 17,452 \\
+ \hline
+ Case 3 & 1 & 7 & 126 & 1,253 \\
+ \hline
+\end{tabular}
+\end{center}
+There will obviously be some variance when running the program, and that is due to using Random() in the code itself. These are the values that appeared the most after I ran the program multiple times. In the table, Case 1 is where there are no positives in the small group of 8 tests, Case 2 is where there is 1 positive in the group, and Case 3 is where there are 2 or more positives in the group. The data for each case appears to be consistent as you grow the population size, which is to be expected since each test has an infection rate of 2 percent.
+\end{document}
